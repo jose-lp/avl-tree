@@ -1,0 +1,11 @@
+name: Continuous Integration
+description: 'Greet someone and record the time'
+on: 
+    pull_request:
+        branches: [ master ]
+
+jobs:
+    test_pull_request:
+        using: 'docker'
+        image: 'Dockerfile'
+        run: ./app/test

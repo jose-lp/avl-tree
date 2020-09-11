@@ -47,5 +47,6 @@ FROM ubuntu:20.04
 
 WORKDIR /app
 
-COPY --from=builder /app/build/test/test /app
- 
+COPY --from=builder /app/build/test/test /app 
+
+CMD [ "./test" ]

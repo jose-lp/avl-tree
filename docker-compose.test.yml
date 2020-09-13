@@ -3,9 +3,9 @@ version: "3"
 services:
     
     sut:
-        depends_on:
-            - build
-            - gtest
+        build: .
+        command: run_tests.sh
+    
     build:        
         build: .
         image: ${IMAGE_NAME}

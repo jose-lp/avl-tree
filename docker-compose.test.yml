@@ -1,13 +1,12 @@
 version: "3"
 
 services:
-
-    build:
+    
+    stut:
         build: .
-        image: ${IMAGE_NAME}
-
-    gtest:
-        image: ${IMAGE_NAME}
-        depends_on: build
         command: run_tests.sh
+        image: ${IMAGE_NAME}
+        
+
+
 

@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    
+    sut:
+        depends_on: gtest
+
+    build:
+        build: .
+        image: avltree
+
+    gtest:
+        image: avltree
+        depends_on: build
+        command: run_tests.sh
+

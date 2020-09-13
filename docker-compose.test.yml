@@ -4,6 +4,6 @@ services:
     
     sut:
         build: .
-        command: ./app/test
+        command: ./test
 
 

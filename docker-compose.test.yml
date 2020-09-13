@@ -2,7 +2,7 @@ version: "3"
 
 services:
     
-    stut:
+    sut:
         depends_on:
             - build
             - gtest
